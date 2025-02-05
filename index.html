@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司名称 - 企业简介</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/random/1920x1080/?business');
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+        }
+        .section-padding {
+            padding: 80px 0;
+        }
+        .service-card {
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">公司名称</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">服务项目</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏大图 -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">欢迎来到公司名称</h1>
+            <p class="lead">专业 创新 值得信赖</p>
+        </div>
+    </header>
+
+    <!-- 关于我们 -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="mb-4">关于我们</h2>
+            <p>这里填写公司简介内容，描述公司成立时间、核心业务、企业理念等。</p>
+        </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center">我们的服务</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">服务项目一</h5>
+                            <p class="card-text">服务项目详细说明</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 复制更多服务卡片 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="mb-4 text-center">联系我们</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <p>地址：公司详细地址</p>
+                    <p>电话：000-12345678</p>
+                    <p>邮箱：contact@company.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 公司名称. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
